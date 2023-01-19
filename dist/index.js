@@ -82,7 +82,7 @@ var FileHierarchyFetcher = class {
       }
       return { nestedFiles, flatDirectories };
     };
-    this._attributes = (options == null ? void 0 : options._attributes) ? __spreadValues(__spreadValues({}, this._attributes), options._attributes) : this._attributes;
+    this._attributes = (options == null ? void 0 : options.attributes) ? __spreadValues(__spreadValues({}, this._attributes), options.attributes) : this._attributes;
   }
   getFiles() {
     return new Promise((resolve, reject) => {

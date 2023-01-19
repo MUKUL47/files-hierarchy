@@ -17,15 +17,15 @@ class FileHierarchyFetcher {
   };
   /**
    *
-   * @param options ?: Partial<{ _attributes: Record<string, any>; }> input element attributes
+   * @param options ?: Partial<{ attributes: Record<string, any>; }> input element attributes
    */
   constructor(
     options?: Partial<{
-      _attributes: Record<string, any>;
+      attributes: Record<string, any>;
     }>
   ) {
-    this._attributes = options?._attributes
-      ? { ...this._attributes, ...options._attributes }
+    this._attributes = options?.attributes
+      ? { ...this._attributes, ...options.attributes }
       : this._attributes;
   }
   /**
