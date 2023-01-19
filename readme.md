@@ -58,4 +58,4 @@ fetcher.getFiles().then((data) => {
  **/
 ```
 
-![Nested Hierarchy](https://github.com/MUKUL47/yatra-tour-js/blob/main/nested-demo.png "Nested Hierarchy")
+![Nested Hierarchy](https://github.com/MUKUL47/files-hierarchy/blob/main/nested-demo.PNG "Nested Hierarchy")
