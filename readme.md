@@ -39,9 +39,8 @@ fetcher.getFiles().then((data) => {
 /**flatted directories
  *  {
    "orignalWebkitPath": ".github/workflows/chromatic.yml",
-   "type": "FILE",
+   "type": "FOLDER",
    "path": ".github/",
-   "file": {}
   },
   {
    "orignalWebkitPath": ".github/workflows/chromatic.yml",

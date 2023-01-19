@@ -92,9 +92,10 @@ class FileHierarchyFetcher {
       const paths = file.webkitRelativePath.split("/");
       let currentBranch: Filehierarchy = nestedFiles;
       let directory: Directory | null = null;
-      for (let path of paths) {
+      for (let i = 0; i < paths.length; i++) {
+        const path = paths[i]!;
         if (!currentBranch.has(path)) {
-          const isFile = path.includes(".");
+          const isFile = i === paths.length - 1;
           const value = {
             path: `${(directory?.path && `${directory.path}/`) || ""}${path}${
               (isFile && "") || "/"
